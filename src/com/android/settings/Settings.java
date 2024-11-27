@@ -466,7 +466,7 @@ public class Settings extends SettingsActivity {
             super.onNewIntent(intent);
 
             Log.d(TAG, "Starting onNewIntent");
-
+            setIntent(intent);
             createUiFromIntent(null /* savedState */, convertIntent(intent));
         }
 
